@@ -24,6 +24,7 @@ body {
 a {
     text-decoration: none;
     color: goldenrod;
+    border-bottom: 2px solid goldenrod;
 }
 
 a:hover {
@@ -65,11 +66,28 @@ h1.project-name {
     width: fit-content;
     margin: auto;
     margin-bottom: 2rem;
+    animation: appear 1.5s ease-in-out;
+    
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+        letter-spacing: 1rem;
+    }
+
+    100%{
+        opacity: 100%;
+        letter-spacing: auto;
+    }
 }
 
 div.authors {
-    float: right;
-    width: 12.5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: white;
     padding: 4rem 1rem 5rem 5rem;
     color: rgba(0, 0, 0, 0.6);
 }
@@ -84,8 +102,13 @@ h2 {
 p {
     padding: 2rem 3rem 0 3rem;
     text-indent: 35px;
+    line-height: 2.25rem;
+}
+
+img {
+    padding: 2rem 3rem 0 3rem;
 }
 
 div.authors > section {
-    margin-bottom: 3rem;
+    margin: 0 3rem 3rem 0;
 }
