@@ -144,10 +144,19 @@ div.img-box {
     line-height: 2.25rem;
   }
   
-  section {
-    display: inline-block
+  div.authors section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
-  div.authors > section {
-    margin: 0 3vw 3vw 0;
+  div.authors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
