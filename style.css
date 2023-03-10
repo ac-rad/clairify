@@ -1,7 +1,3 @@
-:root {
-    --primaryColor: linear-gradient(120deg, #155799, #159957);
-  }
-  
   html {
     font-size: 16px;
   }
@@ -75,6 +71,21 @@
     margin-bottom: 2rem;
     animation: appear 1.5s ease-in-out forwards;
   }
+
+  h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    width: fit-content;
+    word-spacing: 2px;
+  }
+  
+  p {
+    padding: 2vw 3vw 0 3vw;
+    text-indent: 5vw;
+    line-height: 2.25rem;
+  }
   
   
   @keyframes appear {
@@ -106,7 +117,7 @@
     justify-content: center;
   }  
 
-div.img-box {
+  div.img-box {
     padding-top: 3%;
     display: flex;
     flex-direction: column;
@@ -118,21 +129,8 @@ div.img-box {
   div.img-box p {
     padding: 0;
     line-height: 1.25rem;
-  }
-  
-  h2 {
-    font-family: "IBM Plex Sans", sans-serif;
-    margin: auto;
-    margin-bottom: 1rem;
-    margin-top: 3rem;
-    width: fit-content;
-    word-spacing: 2px;
-  }
-  
-  p {
-    padding: 2vw 3vw 0 3vw;
-    text-indent: 5vw;
-    line-height: 2.25rem;
+    text-indent: 2rem;
+    text-align: center;
   }
   
   div.authors section {
