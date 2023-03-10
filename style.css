@@ -5,7 +5,7 @@
   html {
     font-size: 16px;
   }
-  
+
   body {
     margin: 0 20rem 0 20rem;
     padding: 0;
@@ -166,4 +166,47 @@ div.img-box {
     margin: auto;
     margin-top: 2rem;
     width: fit-content;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li::before {content: "["counter(li)"]"; 
+    display: inline-block; width: 2em;
+    margin-left: -1em}
+
+  li {counter-increment: li}
+
+  @media screen and (max-width: 500px) {
+    body {
+        margin: 0 2rem 0 2rem;
+    }
+
+    h1.project-name {
+        font-size: 16vw;
+    }
+
+    header.page-header h2 {
+        font-size: 3.5vw
+    }
+
+
+    div.img-container {
+        margin-top: 3rem;
+    }
+
+    div.img-container > * {
+        padding: 0 1rem 0 1rem;
+        width: 80%;
+        height: 80%;
+    }
+
+    div.img-container p {
+        font-size: 70%;
+        line-height: 80%;
+        font-style: italic;
+    }
+
+    
   }
