@@ -132,7 +132,7 @@ div.img-box {
   h2 {
     font-family: "IBM Plex Sans", sans-serif;
     margin: auto;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     margin-top: 3rem;
     width: fit-content;
     word-spacing: 2px;
@@ -159,4 +159,5 @@ div.img-box {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
   }
