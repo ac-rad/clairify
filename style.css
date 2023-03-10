@@ -1,3 +1,7 @@
+:root {
+    --primaryColor: linear-gradient(120deg, #155799, #159957)
+}
+
 html::-webkit-scrollbar {
     width: 15px;
   }
@@ -8,7 +12,7 @@ html::-webkit-scrollbar {
   }
    
   html::-webkit-scrollbar-thumb {
-    background: linear-gradient(120deg, #155799, #159957);
+    background: var(--primaryColor);
     border-radius: 16px;
     box-shadow:0px 0px 6px 2px rgba(0, 0, 0, 0.5);
     max-height: 2rem;    
@@ -17,7 +21,8 @@ html::-webkit-scrollbar {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
     background-color: rgb(255, 248, 231);
 }
 
@@ -57,7 +62,7 @@ a.btn {
     text-align: center;
     padding: 3rem 4rem;
     background-color: #159957;
-    background-image: linear-gradient(120deg, #155799, #159957);
+    background-image: var(--primaryColor);
 }
 
 h1.project-name {
@@ -66,21 +71,21 @@ h1.project-name {
     width: fit-content;
     margin: auto;
     margin-bottom: 2rem;
-    animation: appear 1.5s ease-in-out;
+    animation: appear 1.5s ease-in-out forwards;
     
-}
-
-@keyframes appear {
+  }
+  
+  @keyframes appear {
     0% {
-        opacity: 0%;
-        letter-spacing: 1rem;
+      opacity: 0%;
+      letter-spacing: 1rem;
     }
-
-    100%{
-        opacity: 100%;
-        letter-spacing: auto;
-    }
-}
+    100% {
+      opacity: 100%;
+      letter-spacing: auto;
+    }    
+  }
+  
 
 div.authors {
     display: flex;
@@ -90,6 +95,29 @@ div.authors {
     color: white;
     padding: 4rem 1rem 5rem 5rem;
     color: rgba(0, 0, 0, 0.6);
+}
+
+img {
+    padding: 0
+}
+
+div.img-container {
+    display: flex;
+    justify-content: 50%;
+}
+
+div.img-box {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 15em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+div.img-box p {
+    padding: 0;
+    line-height: 1.25rem;
 }
 
 h2 {
@@ -103,10 +131,6 @@ p {
     padding: 2rem 3rem 0 3rem;
     text-indent: 35px;
     line-height: 2.25rem;
-}
-
-img {
-    padding: 2rem 3rem 0 3rem;
 }
 
 div.authors > section {
