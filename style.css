@@ -7,7 +7,7 @@
   }
 
   body {
-    margin: 0 20rem 0 20rem;
+    margin: 0 15rem 0 15rem;
     padding: 0;
     font-family: 'Courier Prime', sans-serif;
     font-size: 1rem;
@@ -107,20 +107,11 @@
   }  
 
 div.img-box {
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 15em;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-div.img-box {
     padding-top: 3%;
     display: flex;
     flex-direction: column;
     padding: 2vw;
-    width: 15em;
+    width: auto;
     color: rgba(0, 0, 0, 0.6);
   }
   
@@ -178,7 +169,7 @@ div.img-box {
 
   li {counter-increment: li}
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 400px) {
     body {
         margin: 0 2rem 0 2rem;
     }
