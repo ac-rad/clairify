@@ -64,7 +64,7 @@
   }
   
   h1.project-name {
-    font-size: 8vw;
+    font-size: 5rem;
     font-family: 'IBM Plex Sans', sans-serif;
     color: #FF7AAC;
     width: fit-content;
@@ -197,6 +197,4 @@
         line-height: 80%;
         font-style: italic;
     }
-
-    
   }
