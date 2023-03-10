@@ -26,6 +26,10 @@ body {
     background-color: rgb(255, 248, 231);
 }
 
+main {
+    margin: 0 12rem 0 12rem;
+}
+
 a {
     text-decoration: none;
     color: goldenrod;
@@ -103,7 +107,7 @@ img {
 
 div.img-container {
     display: flex;
-    justify-content: 50%;
+    justify-content: center;
 }
 
 div.img-box {
@@ -135,4 +139,11 @@ p {
 
 div.authors > section {
     margin: 0 3rem 3rem 0;
+}
+
+footer {
+    background: var(--primaryColor);
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
