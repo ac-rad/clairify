@@ -55,6 +55,7 @@
   span.icon > svg {
     width: 1rem;
     height: 1rem;
+    margin-bottom: -3px;
   }
 
   .page-header {
@@ -198,3 +199,14 @@
         font-style: italic;
     }
   }
+
+.reactive {
+  position: relative;
+  opacity: 0;
+  transition: 0.5s all cubic-bezier(1, 0.5, 1, 0.5);
+}
+
+.active{
+  opacity: 1;
+}
+  
