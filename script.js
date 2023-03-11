@@ -20,3 +20,7 @@ function reveal() {
   
   reveal()
   window.addEventListener("scroll", reveal);
+
+  window.addEventListener('resize', function() {
+    window.resizeTo(width, height);
+});
