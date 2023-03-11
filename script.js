@@ -7,8 +7,10 @@ function reveal() {
       const elementBottom = reveals[i].getBoundingClientRect().bottom;
       const elementVisibleTop = 100;
       const elementVisibleBottom = 550;
-      console.log(elementTop)
-      if (elementTop < (windowHeight - elementVisibleTop) & (windowHeight - elementVisibleBottom) < elementBottom) {
+      const winHeight = window.innerHeight;
+
+      console.log(winHeight)
+      if (elementTop < (windowHeight - 0.1*winHeight) & (windowHeight - 0.9*winHeight) < elementBottom) {
         reveals[i].classList.add("active");
       } else {
         reveals[i].classList.remove("active");
