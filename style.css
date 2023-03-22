@@ -162,6 +162,15 @@
     padding: 1rem;
   }
 
+  div.orgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
   footer {
     margin: auto;
     margin-top: 2rem;
