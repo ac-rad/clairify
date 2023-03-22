@@ -13,12 +13,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <block class="reactive">
+    
     <header class="page-header" role="banner">
       <h1 class="project-name" style="font-weight: bold;">CLAIRify</h1>
       <h2>Marta Skreta*<sup>1,2</sup>, Naruki Yoshikawa*<sup>1,2</sup>, Sebastian Arellano-Rubach<sup>3</sup>, Zhi Ji<sup>1</sup>, Lasse Bjørn Kristensen<sup>1</sup>, Kourosh Darvish<sup>1,2</sup>, Alán Aspuru-Guzik<sup>1,2,4</sup>, Florian Shkurti<sup>1,2,4</sup>, Animesh Garg<sup>1,2,4,5</sup></h2>
       <h3>1: University of Toronto, 2: Vector Institute for Artificial Intelligence, 3: University of Toronto Schools, 4: Accleration Consortium, 5: NVIDIA</h3>
-      <block class="reactive">
+      
         <div class="orgs">
           <section>
             <img src="media/logos/uoft.jpeg" alt="pfp" width="150px" height="100px" style="display: center">
@@ -33,7 +33,7 @@
             <img src="media/logos/nvidia.jpeg" alt="pfp" width="150px" height="100px" style="display: center">
           </section>
           </div>
-      </block>
+      
             
       <section>
       <a href="https://github.com/ac-rad/xdl-generation" class="btn">
@@ -54,18 +54,18 @@
       </a>
     </section>
     </header>
-    </block>
+    
       <main>
-        <block class="reactive">
+        
         <h2>Motivation</h2>
         <p>We introduce CLAIRify: a novel approach that combines automatic iterative prompting with program verification to ensure programs written in domain-specific languages are syntactically valid and incorporate environment constraints.</p>
-        </block>
-        <block class="reactive">
+        
+        
         <div class="img-container">
           <div class="img-box"><img src="media/bakingsoda_gif.gif"/></div>
         </div>
-        </block>
-        <block class="reactive">
+        
+        
         <h2>Problems with using large language models for task-plan generation:</h2>
         <p>
           <ul> 
@@ -85,41 +85,41 @@
             </li>
           </ul>
         </p>
-        </block>
-        <block class="reactive">
+        
+        
         <h2>Our solution: CLAIRify</h2>
         <p>CLAIRify is a framework that translates natural language into a domain-specific structured task plan using an automated iterative verification technique to ensure the plan is syntactically valid in the target DSL. Our model also takes into account environment constraints if provided. </p>
-        </block>
-        <block class="reactive">
+        
+        
         <div class="img-container">
           <div class="img-box"><img src="media/model.gif"/></div>
         </div>
-        </block>
+        
     
-        <block class="reactive">
+        
         <h2>Example of iterative prompting with CLAIRify</h2>
         <p>Here, we demonstrate an interaction between the generator and the verifier to generate a XDL task plan.</p>
-        </block>
-        <block class="reactive">
+        
+        
         <div class="img-container">
           <div class="img-box"><img src="media/iteration.gif"/></div>
         </div>
-        </block>
+        
     
-        <block class="reactive">
+        
         <h2>Results</h2>
         <p>We show the performance of CLAIRify compared to a state-of-the-art baseline on two datasets [1] Chem-RnD (organic chemistry synthesis protocols) and [2] Chem-EDU (household chemistry experiments exectuable by our robot). We report the number of plans successfully generated, as well as expert preference (given two anonymized plans for the same instruction, we asked experts to pick their preferred plan or classify them equally as good).    </p>
-        </block>
-        <block class="reactive">
+        
+        
         <div class="img-container">
           <div class="img-box"><img src="media/results.png"/></div>
         </div>
-        </block>
+        
     
-    <block class="reactive">
+    
         <h2>Robot demo</h2>
         <p>To execute our generated plans on a real robot, we integrate our pipeline with a Task and Motion Planner. We show two robot experiments from the Chem-EDU dataset: </p>
-        </block>
+        
         <p>
           <ul> 
             <li>pH experiment: mixing baking soda with red cabbage solution
@@ -130,14 +130,14 @@
                 
             </li>
             <li>Food preparation: making lemonade
-              <block class="reactive">
+              
                  -- Coming soon! 
-               </block>
+               
             </li>
           </ul>
         </p>
 
-        <block class="reactive">
+        
         <h2>Contributors</h2>
         <div class="authors">
           <section>
@@ -194,7 +194,7 @@
             <span>Animesh Garg</span>
           </section>
         </div>      
-        </block>  
+          
       </main>
     <script src="script.js"></script>
   </body>
