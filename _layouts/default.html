@@ -53,14 +53,14 @@
         <p>
           <ul>
             
-            <li>Poor performance for data-scarce domain-specific languages
+            <li>Poor performance for data-scarce domain-specific languages. We demonstrate that for XDL, a language used in robotics for chemistry lab automation, vanilla zero-shot prompting of LLMs produces erroneous task plans.
                 <block class="reactive">
                 <div class="img-container">
                   <div class="img-box"><img src="media/prob1.png"/></div>
                 </div>
                 </block>
             </li>
-            <li>Lack of task-plan verification
+            <li>Lack of task-plan verification. Generated task plans might not be executable by a robot because they are syntactically incorrect and/or incorporate resources not present in the environment. 
               <block class="reactive">
                 <div class="img-container">
                   <div class="img-box"><img src="media/prob2.png"/></div>
@@ -82,11 +82,21 @@
     
         <block class="reactive">
         <h2>Example of iterative prompting with CLAIRify</h2>
-        <p>Here, we demonstrate an interaction between the generator and the verifier.</p>
+        <p>Here, we demonstrate an interaction between the generator and the verifier to generate a XDL task plan.</p>
         </block>
         <block class="reactive">
         <div class="img-container">
           <div class="img-box"><img src="media/iteration.gif"/></div>
+        </div>
+        </block>
+    
+        <block class="reactive">
+        <h2>Results</h2>
+        <p>We show the performance of CLAIRify compared to a state-of-the-art baseline on two datasets [1] Chem-RnD (organic chemistry synthesis protocols) and [2] Chem-EDU (household chemistry experiments exectuable by our robot). We report the number of plans successfully generated, as well as expert preference (given two anonymized plans for the same instruction, we asked experts to pick their preferred plan or classify them equally as good).    </p>
+        </block>
+        <block class="reactive">
+        <div class="img-container">
+          <div class="img-box"><img src="media/results.png"/></div>
         </div>
         </block>
 
