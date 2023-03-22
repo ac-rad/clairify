@@ -81,7 +81,7 @@
     width: fit-content;
     word-spacing: 2px;
     font-family: 'Courier Prime', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   h3 {
@@ -89,7 +89,7 @@
     margin: auto;
     width: fit-content;
     font-family: 'Courier Prime', sans-serif;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     color: #A5A5A5;
   }
   
@@ -165,7 +165,7 @@
 
   div.orgs {
     display: grid;
-    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, auto);
     justify-content: center;
     align-items: center;
