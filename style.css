@@ -75,14 +75,13 @@
   }
 
   h2 {
-    font-family: "IBM Plex Sans", sans-serif;
     margin: auto;
     margin-bottom: 1rem;
     margin-top: 3rem;
     width: fit-content;
     word-spacing: 2px;
     font-family: 'Courier Prime', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   h3 {
@@ -90,7 +89,7 @@
     margin: auto;
     width: fit-content;
     font-family: 'Courier Prime', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: #A5A5A5;
   }
   
@@ -166,7 +165,7 @@
 
   div.orgs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 0.5fr);
     grid-template-rows: repeat(1, auto);
     justify-content: center;
     align-items: center;
