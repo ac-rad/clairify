@@ -105,7 +105,6 @@
   
   p {
     padding: 2vw 3vw 0 3vw;
-    text-indent: 5vw;
     line-height: 2.25rem;
   }
   
@@ -152,7 +151,7 @@
   div.img-box p {
     padding: 0;
     line-height: 1.25rem;
-    text-indent: 2rem;
+    text-fnt: 2rem;
     text-align: left;
   }
   
