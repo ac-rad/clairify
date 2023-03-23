@@ -19,7 +19,7 @@
   a {
     text-decoration: none;
     color: goldenrod;
-    border-bottom: 0.2rem solid goldenrod;
+    border-bottom: 0.2rem solid;
   }
   
   a:hover {
