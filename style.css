@@ -18,8 +18,8 @@
   
   a {
     text-decoration: none;
-    color: goldenrod;
-    border-bottom: 0.2rem solid;
+    color: black;
+    border-bottom: 0.2rem solid #A5A5A5;
   }
   
   a:hover {
