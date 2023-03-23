@@ -40,7 +40,15 @@
     margin: 0.5rem;
     max-height: 2rem;
   }
-  
+
+  a.img {
+    border-bottom: 0
+  }
+
+  a.img:hover {
+    filter: brightness(100%);
+  }  
+
   .btn:hover {
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
@@ -146,6 +154,7 @@
     padding: 2vw;
     width: auto;
     color: rgba(0, 0, 0, 0.6);
+    filter: brightness(100.20%);
   }
   
   div.img-box p {
