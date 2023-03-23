@@ -113,7 +113,7 @@
   
   p {
     padding: 2vw 3vw 0 3vw;
-    line-height: 2.25rem;
+    line-height: 1.5rem;
   }
   
   
@@ -139,7 +139,9 @@
   img {
     object-fit: contain;
     padding: 0;
-    max-width: 100%;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
   }
   
   div.img-container {
@@ -205,7 +207,10 @@
     display: inline-block; width: 2em;
     }
 
-  li {counter-increment: li}
+  li {
+    counter-increment: li;
+    line-height: 1.25rem;
+  }
 
   @media screen and (max-width: 400px) {
     body {
