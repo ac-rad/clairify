@@ -1,5 +1,5 @@
   html {
-    font-size: 16px;
+    font-size: 100%;
   }
 
   body {
@@ -18,8 +18,8 @@
   
   a {
     text-decoration: none;
-    color: goldenrod;
-    border-bottom: 0.2rem solid goldenrod;
+    color: black;
+    border-bottom: 0.15rem solid #D3D3D3;
   }
   
   a:hover {
@@ -40,7 +40,15 @@
     margin: 0.5rem;
     max-height: 2rem;
   }
-  
+
+  a.img {
+    border-bottom: 0
+  }
+
+  a.img:hover {
+    filter: brightness(100%);
+  }  
+
   .btn:hover {
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
@@ -85,6 +93,16 @@
   }
 
   h3 {
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    width: fit-content;
+    word-spacing: 2px;
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 1rem;
+  }
+
+  h4 {
     font-family: "IBM Plex Sans", sans-serif;
     margin: auto;
     width: fit-content;
@@ -136,12 +154,13 @@
     padding: 2vw;
     width: auto;
     color: rgba(0, 0, 0, 0.6);
+    filter: brightness(100.20%);
   }
   
   div.img-box p {
     padding: 0;
     line-height: 1.25rem;
-    text-indent: 2rem;
+    text-fnt: 2rem;
     text-align: left;
   }
   
@@ -184,7 +203,7 @@
 
   li::before {content: "["counter(li)"]"; 
     display: inline-block; width: 2em;
-    margin-left: -1em}
+    }
 
   li {counter-increment: li}
 
