@@ -194,7 +194,7 @@
 
   li::before {content: "["counter(li)"]"; 
     display: inline-block; width: 2em;
-    margin-left: -1em}
+    }
 
   li {counter-increment: li}
 
