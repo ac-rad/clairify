@@ -3,7 +3,7 @@
   }
 
   body {
-    margin: 0 8% 0 8%;
+    margin: 0 2% 0 2%;
     width: fit-content;
     padding: 0;
     font-family: 'Courier Prime', sans-serif;
@@ -13,7 +13,17 @@
   
   main {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 992px) {
+    body {
+      margin: 0 8% 0 8%;
+    }
+    
+    main {
+      max-width: 80%;
+    }
   }
   
   a {
@@ -206,6 +216,13 @@
 
   ul {
     list-style: none;
+    padding-inline-start: 0px;
+  }
+
+  @media screen and (min-width: 992px) {
+    ul {
+      padding-inline-start: 40px;
+    }
   }
 
   li::before {content: "["counter(li)"]"; 
