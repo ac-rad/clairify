@@ -139,9 +139,8 @@
   img {
     object-fit: contain;
     padding: 0;
-    width: 75%;
+    max-width: 100%;
     height: auto;
-    margin: 0 auto;
   }
   
   div.img-container {
@@ -157,6 +156,12 @@
     width: auto;
     color: rgba(0, 0, 0, 0.6);
     filter: brightness(100.20%);
+  }
+
+  @media screen and (min-width: 992px) {
+    div.img-box {
+      width: 75%;
+    }
   }
   
   div.img-box p {
