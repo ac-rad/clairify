@@ -192,8 +192,8 @@
   div.authors {
     display: grid;
     grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: row;
-    grid-template-columns: repeat(3, auto);
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -264,4 +264,14 @@
         font-style: italic;
     }
   }
+
+.reactive {
+  position: relative;
+  opacity: 0;
+  transition: 0.1s all cubic-bezier(1, 0.5, 1, 0.5);
+}
+
+.active{
+  opacity: 1;
+}
   
